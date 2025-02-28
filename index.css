@@ -6,13 +6,15 @@ body {
   background-color: #101423;
   color: #f1f1f1;
   font-family: "Jost", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
 #cevat-text {
   font-family: "Caveat", cursive;
-  font-weight: lighter;
+  font-weight: 300;
   background: linear-gradient(90deg, #FFEAC2, #EED5A2, #745D29);
   background-clip: text;
   -webkit-background-clip: text;
@@ -27,6 +29,49 @@ body {
 
 #jost-text {
   font-family: "Jost", sans-serif;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-family: "Caveat", cursive;
+  background: linear-gradient(90deg, #FFEAC2, #EED5A2, #745D29);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card {
+  background-color: #3B425F;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(238, 236, 236, 0.917);
+  padding: 1rem;
+  margin: 1rem;
+  color: #f1f1f1;
+}
+
+.btn {
+  background-color: #3B425F;
+  color: #f1f1f1;
+  border: 1px solid transparent;
+  border-image: linear-gradient(90deg, #FFEAC2, #EED5A2, #745D29);
+  border-image-slice: 1;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+.btn:active {
+  background-color: #EED5A2;
+  color: #f1f1f1;
+  border: 1px solid #745D29;
+}
+
+.show {
+  display: block !important;
+}
+
+.project-container {
+  display: none; /* Skjul alle projekter som standard */
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -17,19 +17,19 @@ $cevat-text: 'Caveat', cursive;
 $jost-text: 'Jost', sans-serif;
 
 
-
-
 body{
     background-color:$primary-color;
     color: $text-color;
     font-family:$jost-text;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
 #cevat-text {
     font-family: $cevat-text;
-    font-weight: lighter;
+    font-weight: 300;
     background:$gold-color;
     background-clip: text;
     -webkit-background-clip: text;
@@ -44,4 +44,46 @@ body{
 
 #jost-text {
     font-family: $jost-text;
+}
+h4 {
+    font-size: 1.5rem;
+    font-family: $cevat-text;
+    background:$gold-color;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card {
+    background-color: $cards-color;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(238, 236, 236, 0.917);
+    padding: 1rem;
+    margin: 1rem;
+    color: $text-color;
+}
+
+.btn {
+    background-color: $cards-color;
+    color: $text-color;
+    border: 1px solid transparent; // Ændret til transparent for at bruge border-image
+    border-image: $gold-color; // Tilføj denne linje for at bruge gradienten
+    border-image-slice: 1; // Tilføj denne linje for at sikre, at hele gradienten bruges
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin: 0.5rem;
+    
+    &:active {
+        background-color: $gradient-middle; // Ændre baggrundsfarven ved aktiv tilstand
+        color: $text-color; // Ændre tekstfarven ved aktiv tilstand
+        border: 1px solid $gradient-end; // Ændre kantfarven ved aktiv tilstand
+    }
+}
+
+.show {
+    display: block !important;
+}
+.project-container {
+    display: none; /* Skjul alle projekter som standard */
 }
