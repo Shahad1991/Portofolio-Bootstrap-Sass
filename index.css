@@ -1,0 +1,32 @@
+/* color */
+/* text color */
+/* gradient */
+/* font type */
+body {
+  background-color: #101423;
+  color: #f1f1f1;
+  font-family: "Jost", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+#cevat-text {
+  font-family: "Caveat", cursive;
+  font-weight: lighter;
+  background: linear-gradient(90deg, #FFEAC2, #EED5A2, #745D29);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#gradient-border {
+  border: 1px solid linear-gradient(90deg, #FFEAC2, #EED5A2, #745D29);
+  border-image: linear-gradient(90deg, #FFEAC2, #EED5A2, #745D29);
+  border-image-slice: 1;
+}
+
+#jost-text {
+  font-family: "Jost", sans-serif;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,47 @@
+/* color */
+$primary-color: #101423;
+$secondary-color: #F0D2C7;
+$cards-color: #3B425F;
+$gradient-start: #FFEAC2;
+$gradient-middle: #EED5A2;
+$gradient-end: #745D29;
+
+/* text color */
+$text-color: #f1f1f1;
+
+/* gradient */
+$gold-color: linear-gradient(90deg, $gradient-start, $gradient-middle, $gradient-end);
+
+/* font type */
+$cevat-text: 'Caveat', cursive;
+$jost-text: 'Jost', sans-serif;
+
+
+
+
+body{
+    background-color:$primary-color;
+    color: $text-color;
+    font-family:$jost-text;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+#cevat-text {
+    font-family: $cevat-text;
+    font-weight: lighter;
+    background:$gold-color;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#gradient-border {
+    border: 1px solid $gold-color;
+    border-image: $gold-color;
+    border-image-slice: 1;
+}
+
+#jost-text {
+    font-family: $jost-text;
+}

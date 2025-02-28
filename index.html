@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+</head>
+<body class="text-white">
+    <nav class="navbar navbar-expand-lg navbar-custom px-5 ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#hero-image">
+               <h4 id="cevat-text">Shahad</h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end mx-1" id="navbarNav">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="#hero-image">Hjem</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#om-mig">Om mig</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#projekter">Projekter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../images/CV Shahad.pdf" target="_blank">CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contact">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="hero-image" class="container-fluid hero-section">
+        <div class="row align-items-center">
+            <!-- Venstre kolonne med tekst -->
+            <div class="col-md-6 d-flex align-items-center">
+                <img class="sideimag img-fluid" src="./images/hero,sideimag.png" alt="">
+                <div class="text-container">
+                    <h2 id="cevat-text">Velkommen til min verden</h2>
+                    <h1 class="display-4">Mit navn er Shahad,</h1>
+                    <h1 class="display-4">og jeg er <span>Webudvikler</span></h1>
+                    <h2 id="changingH2" class="lead">Beskrives ofte som <br></h2>
+                    <div class="icons">
+                        <a href="https://github.com/Shahad1991" class="me-3">
+                            <i class="bi bi-github" style="font-size: 2rem; color: #EED5A2;"></i>
+                        </a>
+                        <a href="https://www.instagram.com/shahadnazaromhassoni/" class="me-3">
+                            <i class="bi bi-instagram" style="font-size: 2rem; color: #EED5A2;"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/shahad-al-jawashee-41502a24b/">
+                            <i class="bi bi-linkedin" style="font-size: 2rem; color: #EED5A2;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Højre kolonne med billede -->
+            <div class="col-md-6 position-relative">
+                <!-- Hero baggrundsbillede (placeres bag billedet) -->
+                <div class="hero-img-container position-absolute top-0 start-0 w-100 h-100" style="background-image: url('./images/background-hero.svg'); background-position: right; background-repeat: no-repeat; z-index: -1;"></div>
+                
+                <!-- Hero billede -->
+                <img class="hero-img img-fluid rounded-top-3" src="./images/myimag.png" alt="Hero image">
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <div class="container projekts-container text-dark " id="projekter">
+        <div class="text-center my-5">
+            <h1 class="text-white">Mine projekter</h1>
+            <h4 class="font-caveat text-white ">et indblik i mine kreative projekter</h4>
+        </div>
+        <div class="text-center mb-4 filter-container">
+            <button class="btn btn-outline-primary filter-btn active" onclick="filterSelection('all')">Alle</button>
+            <button class="btn btn-outline-primary filter-btn" onclick="filterSelection('school')">Skole Projekter</button>
+            <button class="btn btn-outline-primary filter-btn" onclick="filterSelection('personal')">Personlige Projekter</button>
+        </div>
+    
+        <div id="project-list"  class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 mb-4 project-container school">
+    <div class="card h-100 text-bg-light p-3">
+        <img class="card-img-top img-card" src="./images/e-commerce.png" alt="E-Commerce">
+        <div class="card-body">
+            <h5 class="card-title projekts p3">E-Commerce</h5>
+            <p class="card-text p3">Vi arbejdede med Lean Startup-processen for at designe en unik T-shirt og lancere en webshop, hvor vi sælger produktet. Ideen var at skabe et unikt design og markedsføre det via sociale medier. Vi opbyggede en online kanal på Instagram, <a href="https://www.instagram.com/noodledoodlezoo/">Noodle Doodle Zoo</a>, hvor vi fokuserede på at markedsføre produktet og vise vores kollektion.<br>Min rolle i projektet omfattede:</p>
+            <ul class="list-unstyled feature-list p3">
+                <li>Idegenerering/Ideudvikling</li>
+                <li>Gennemførelse af interviews og tests</li>
+                <li>Arbejde med storytelling</li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+            <div class="col-lg-4 col-md-6 mb-4 project-container school">
+                <div class="card h-100">
+                    <img class="card-img-top img-card" src="./images/app.png" alt="Iværksætteridé">
+                    <div class="card-body">
+                        <h5 class="card-title projekts-h1">Iværksætteridé</h5>
+                        <p class="card-text">Til mit afsluttende projekt i multimediedesign udviklede jeg en iværksætteridé, hvor jeg gennem grundig research fandt potentialet for en app til håndværkere. Jeg stod for hele processen, fra idéudvikling og design til kodning og markedsføring af B2B-produktet, og integrerede både Lean Startup- og Design Thinking-modellerne i arbejdet.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 mb-4 project-container school">
+                <div class="card h-100">
+                    <img class="card-img-top img-card" src="./images/kogehandel.png" alt="UX">
+                    <div class="card-body">
+                        <h5 class="card-title projekts-h1">UX</h5>
+                        <p class="card-text">Vi samarbejdede med Køge Handel om at øge kundetrafikken. Gennem UX-research identificerede vi problemer som uklare parkeringsregler og navigationsvanskeligheder. Løsningen blev en QR-kode, der hjælper besøgende med at finde regler og butikker.<br>Min rolle i projektet omfattede:</p>
+                        <ul class="list-unstyled feature-list">
+                            <li>Gennemførelse af interviews og desk research</li>
+                            <li>Udvikling af personas og brugerrejser</li>
+                            <li>Idegenerering/ Test af løsningen</li>
+                            <li>Kodning af en del af prototypen</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 mb-4 project-container school">
+                <div class="card h-100">
+                    <img class="card-img-top img-card" src="./images/2sem.png" alt="Opbygning af Hjemmeside">
+                    <div class="card-body">
+                        <h5 class="card-title projekts-h1">Opbygning af Hjemmeside</h5>
+                        <p class="card-text">Her har vi samarbejdet med, <a href="http://www.hmi-tomrermester.dk/"> hmi-tomremester </a> Sammen udviklede vi en imponerende hjemmeside og en målrettet social medie strategi til en start-up tømrervirksomhed. Endvidere kunne vi stolt præsentere en velformuleret hjemmeside til vores kunde.<br> Min rolle i projektet omfattede:</p>
+                        <ul class="list-unstyled feature-list">
+                            <li>Undersøgelse af målgruppen/interviews</li>
+                            <li>Udvikling af markedsføringsstrategi</li>
+                            <li>Finde farver og skrifttype/ Design af prototyper</li>
+                            <li>Kodning af dele af projektet</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 mb-4 project-container school">
+                <div class="card h-100">
+                    <img class="card-img-top img-card" src="./images/golf.png" alt="Optimering af Hjemmeside">
+                    <div class="card-body">
+                        <h5 class="card-title projekts-h1">Optimering af Hjemmeside</h5>
+                        <p class="card-text">Vi har samarbejdet med en kunde, som driver hjemmesiden <a href="https://www.golfacross.com/"> GolfAcross</a>, hvor målgruppen er golfspillere. Vores opgave var at optimere hjemmesiden ved at gennemføre omfattende tests af både appen og hjemmesiden. Målet var at identificere problemer og derefter arbejde målrettet på at løse dem.<br> Min rolle i projektet omfattede:</p>
+                        <ul class="list-unstyled feature-list">
+                            <li>Gennemførelse af interviews og tests</li>
+                            <li>Udarbejdelse af personaer og brugerrejser</li>
+                            <li>Kodning af dele af prototypen</li>
+                            <li>Idegenerering</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 mb-4 project-container school">
+                <div class="card h-100">
+                    <img class="card-img-top img-card" src="./images/bookingsystem.png" alt="Opbygning af Bookingsystem">
+                    <div class="card-body">
+                        <h5 class="card-title projekts-h1">Opbygning af Bookingsystem</h5>
+                        <p class="card-text">På tredje semester af multimediedesign har jeg samarbejdet med en kollega om at designe og udvikle et nyt bookingsystem til en psykiatrisk hjemmeside. Projektet involverede tæt samarbejde med kunden og omfattede hele processen fra UX-research og design til kodning af prototypen, hvor fokus var at forbinde systemet til en database ved hjælp af Firebase.<br> Min rolle i projektet omfattede:</p>
+                        <ul class="list-unstyled feature-list">
+                            <li>logodesign</li>
+                            <li>Udarbejdelse af personaer og brugerrejser</li>
+                            <li>Kodning af dele af prototypen</li>
+                            <li>Idegenerering og forbindelse med database</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 mb-4 project-container personal">
+                <div class="card h-100">
+                    <img class="card-img-top img-card" src="./images/logodesign.png" alt="Logo Design">
+                    <div class="card-body">
+                        <h5 class="card-title projekts-h1">Logo Design</h5>
+                        <p class="card-text">Jeg har designet et logo til en tømrerfirma, der er både enkelt og nemt at huske. Logoet blev brugt på arbejdstøj, arbejdsbil og visitkort.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 mb-4  project-container personal">
+                <div class="card h-100">
+                    <img class="card-img-top img-card" src="./images/bilreklame.png" alt="Design af Bilreklame">
+                    <div class="card-body">
+                        <h5 class="card-title projekts-h1">Design af Bilreklame</h5>
+                        <p class="card-text">Som en del af mit designlærlingarbejde har jeg designet en bilreklame for en kunde. Fokus var på at vælge farver og skrifttyper, som allerede er brugt på kundens hjemmeside, for at sikre en sammenhængende visuel identitet. Reklamen præsenterer informationen klart og tydeligt, og sigter mod at øge synligheden og tiltrække flere kunder.</p>
+                    </div>
+                    <img src="./images/hmi-bil.png" alt="">
+                </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 mb-4 project-container personal">
+                <div class="card h-100">
+                    <img class="card-img-top img-card" src="./images/some.png" alt="Content Creation">
+                    <div class="card-body">
+                        <h5 class="card-title projekts-h1">Content Creation</h5>
+                        <p class="card-text">I min fritid arbejder jeg med content creation for<a href="https://www.instagram.com/hmitomrermester/"> HMI Tømrermester</a> på deres erhvervs-Instagram-konto. <br>Mine opgaver omfatter:</p>
+                        <ul class="list-unstyled feature-list">
+                            <li>Design af Instagram highlights</li>
+                            <li>Desk research og idegenerering</li>
+                            <li>Fotografering af projekter</li>
+                            <li>Videoproduktion og -redigering</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 mb-4 project-container personal">
+                <div class="card h-100">
+                    <img class="card-img-top img-card" src="./images/visitkort.png" alt="Design af Visitkort">
+                    <div class="card-body">
+                        <h5 class="card-title projekts-h1">Design af Visitkort</h5>
+                        <p class="card-text">Jeg har designet et visitkort, der hjælper kunden med at nå ud til sin målgruppe. Fokus var på at skabe et professionelt og mindeværdigt design, der effektivt kommunikerer kundens budskab og brandidentitet.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 mb-4 project-container personal">
+                <div class="card h-100">
+                    <img class="card-img-top img-card" src="./images/bilrekale2.png" alt="Bilreklame">
+                    <div class="card-body">
+                        <h5 class="card-title projekts-h1">Bilreklame</h5>
+                        <p class="card-text">Jeg samarbejdede med Bygg og renovere om at designe en bilreklame, der afspejler deres visuel identitet med designet på deres hjemmeside.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 mb-4 project-container personal">
+                <div class="card h-100">
+                    <img class="card-img-top img-card" src="./images/logodesign2.png" alt="Logo Design">
+                    <div class="card-body">
+                        <h5 class="card-title projekts-h1">Logo Design</h5>
+                        <p class="card-text">Jeg har designet et logo til et tømrerfirma med fokus på enkelhed og genkendelighed. Logoet er skabt til at være professionelt og anvendeligt på arbejdstøj, køretøjer og markedsføringsmaterialer, alt sammen for at tydeligt afspejle virksomhedens brand.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <img class="stiky-background w-100" src="./images/background.png" alt="Background image">
+    <div class="container om-mig py-5" id="om-mig">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center mb-4 mb-md-0">
+              <img src="./images/my.jpeg" alt="Personal image" class="img-fluid rounded-circle">
+        </div>
+        <div class="col-md-6">
+            <h1 class="text-start">Om mig</h1>
+            <h4 class="font-caveat ">en kort rejse gennem min baggrund, passioner og visioner</h4>
+            <p>Jeg er en ambitiøs og kreativ multimediedesigner med en passion for digital udvikling. Min interesse for teknologi og design har drevet mig til at vælge digital udvikling som en valgfag under mit Uddannelse som multimediedesigner. Jeg er en teamplayer og nyder at arbejde med andre kreative fagfolk i mit projektarbejde. Jeg værdsætter feedback og er altid åben for at lære og udvikle mig. <br>
+                Jeg er god til at effektivt planlægge min tid. Min tendens til at skabe struktur hjælper mig med at organisere mine omgivelser og opgaver på en velordnet måde. Jeg er overbevist om, at opmærksomhed for detaljer er afgørende for at levere arbejde af høj kvalitet. <br>
+                Yderligere har jeg en hobby inden for fotografering. Jeg nyder at fange øjeblikke og skabe visuelle historier med mine fotografier. Denne hobby har lært mig at observere verden på en anden måde og se skønheden i de små detaljer. Ikke mindst giver mig mulighed for at skabe visuelt tiltalende og meningsfulde oplevelser for brugerne.
+            </p>
+            <a href="./images/CV  Shahad.pdf" target="_blank" class="btn btn-primary">Min CV</a>
+        </div>
+    </div>
+    </div>
+       <img class="stiky-background w-100"src="./images/background.png" alt="Background image">
+       <div class="container anmeldelse py-5">
+        <div class="text-center mb-4">
+            <h1 class="min-h1">Det siger andre om mig</h1>
+            <h4 class="font-caveat ">ærlige ord fra dem, jeg har samarbejdet med</h4>
+        </div>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner min-vh-50">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center">
+                        <div class="col-md-8 mySlides">
+                            <q>Shahad har været et aktiv gruppemedlem med gode kommunikationsevner. Hun har været hurtigt
+                                til at løse problemer både når hun arbejder alene eller som en gruppe. Shahad er altid smilende og
+                                imødekommende, specielt hvis man har spørgsmål eller vil have hjælp. Hun har været fantastisk at have som
+                                gruppemedlem</q>
+                            <p class="author">- Fatime/studiekammerat</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <div class="col-md-8 mySlides">
+                            <q>Jeg har arbejdet med Shahad på flere projekter under vores uddannelse. Shahad er positiv og aktiv
+                                person og dejligt, god samarbejde og kommunikation i gruppen</q>
+                            <p class="author">- Areen/studiekammerat</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <div class="col-md-8 mySlides">
+                            <q>Jeg er utroligt begejstret for at dele min oplevelse med Shahad's fantastiske arbejde på at designe
+                                en hjemmeside til mig. Hendes dedikation, professionalisme og kreative flair har virkelig imponeret
+                                mig, og resultatet har overgået alle mine forventninger</q>
+                            <p class="author">- HMI tømrermester/Kunde</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <div class="col-md-8 mySlides">
+                            <q>Jeg har haft muligheden for at arbejde sammen med Shahad i løbet af vores multimediestudier. Shahad
+                                er en meget venlig og målrettet person. Hun løser problemer med en brugercentreret tilgang og bruger
+                                alle tilgængelige data og oplysninger til at finde den rette løsning for opgaven og klienten <span id="dots">... </span><span id="more">Med
+                                hendes lederegenskaber fik vi altid tingene gjort til tiden. Med et skarpt øje for design og
+                                funktion hjalp hun holdet med at skride fremad og bidrog til at løse de aktuelle problemer. Med
+                                en kreativ tilgang og gode samarbejdsevner var det altid en fornøjelse at arbejde sammen med
+                                hende.<br></span>
+                                <button onclick="myFunction()" id="myBtn" class="btn btn-link">Læs mere</button>
+                            </q>
+                            <p class="author">- Lisa/studiekammerat</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <div class="col-md-8 mySlides">
+                            <q>During her internship, Shahad demonstrated a positive attitude towards learning. She was always
+                                willing to assist with tasks and showed initiative in finding solutions to challenges encountered
+                                with web implementation...
+                                <a href="./images/Reference Letter - Shahad.pdf" target="_blank" class="btn btn-link pdf-link">læs hele reference letter</a>
+                            </q>
+                            <p class="author">- Tina/Moonraker</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <img class="stiky-background w-100"src="./images/background.png" alt="Background image">
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card p-4 shadow-sm">
+                    <h2 class="text-center mb-4 font-caveat text-dark ">glæder mig til at høre fra dig!</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Navn</label>
+                            <input type="text" class="form-control" id="name" placeholder="Indtast dit navn" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Besked</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Skriv din besked her" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-light text-center py-4 mt-5 border-top border-light">
+        <div class="container">
+            <div class="icons mb-3">
+                <a href="https://github.com/Shahad1991" class="me-3">
+                    <i class="bi bi-github" style="font-size: 2rem; color: #EED5A2;"></i>
+                </a>
+                <a href="https://www.instagram.com/shahadnazaromhassoni/" class="me-3">
+                    <i class="bi bi-instagram" style="font-size: 2rem; color: #EED5A2;"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/shahad-al-jawashee-41502a24b/">
+                    <i class="bi bi-linkedin" style="font-size: 2rem; color: #EED5A2;"></i>
+                </a>
+            </div>
+            <ul class="list-inline mb-3">
+                <li class="list-inline-item"><a href="#hero-image" class="text-light text-decoration-none">Hjem</a></li>
+                <li class="list-inline-item"><a href="#om-mig" class="text-light text-decoration-none">Om</a></li>
+                <li class="list-inline-item"><a href="#projekter" class="text-light text-decoration-none">Projekter</a></li>
+                <li class="list-inline-item"><a href="#contact" class="text-light text-decoration-none">Kontakt</a></li>
+            </ul>
+            <p class="mb-0">&copy; 2025 Shahad. All rights reserved</p>
+        </div>
+    </footer>
+   
+    
+     
+
+    <!-- Bootstrap JavaScript (valgfrit) -->
+    <script>
+        
+        function filterSelection(category) {
+            var projects = document.getElementsByClassName("project-container");
+            if (category === "all") category = "";
+            for (var i = 0; i < projects.length; i++) {
+                removeClass(projects[i], "show");
+                if (projects[i].className.indexOf(category) > -1) addClass(projects[i], "show");
+            }
+        }
+
+        function addClass(element, name) {
+            var arr1 = element.className.split(" ");
+            var arr2 = name.split(" ");
+            for (var i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        function removeClass(element, name) {
+            var arr1 = element.className.split(" ");
+            var arr2 = name.split(" ");
+            for (var i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        // Initialize filter to show all projects
+        filterSelection("all");
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
